@@ -14,7 +14,7 @@
     <!-- SEO & META (Alapértelmezett: Magyar) -->
     <title id="meta-title">NanoSlim – 50% kedvezmény ma | Kevesebb puffadás, több energia</title>
     <meta name="description" id="meta-desc" content="NanoSlim: Prémium wellness kiegészítő természetes összetevőkkel, amelyek segíthetnek a puffadás csökkentésében és az energiaszint növelésében. 50% kedvezmény ma." />
-    <meta name="keywords" id="meta-keywords" content="NanoSlim, fogyás, detox, wellness, puffadás ellen, lapos has, energia, emésztés, Magyarország, Románia" />
+    <meta name="keywords" id="meta-keywords" content="NanoSlim, fogyás, detox, wellness, puffadás ellen, lapos has, energia, emésztés, Magyarország, Románia, Portugália" />
     <meta name="robots" content="index,follow" />
 
     <!-- UI Assets -->
@@ -129,6 +129,11 @@
                         
                         <!-- Links de Seleção de País -->
                         <div class="flex flex-col gap-4 w-full">
+                            <a href="https://r3es5.doctorthetran.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
+                                <span class="relative z-10" data-i18n="pt">Portugal</span>
+                                <i data-feather="chevron-right" class="w-6 h-6 relative z-10"></i>
+                                <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-700 -skew-x-12 -ml-8 w-1/2 h-full"></div>
+                            </a>
                             <a href="https://dgjee.doctormedved.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="ro">Románia</span>
                                 <i data-feather="chevron-right" class="w-6 h-6 relative z-10"></i>
@@ -154,12 +159,12 @@
             <div class="mb-10 text-gray-500 text-[11px] space-y-6 max-w-xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="text-center md:text-left">
-                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest">Felelős entitás:</p>
+                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest" data-i18n="entity">Felelős entitás:</p>
                         <p>Fonslife Trading FZCO | License 39314</p>
                         <p>Dubai Silicon Oasis, DDP, Building A1, Dubai, UAE</p>
                     </div>
                     <div class="text-center md:text-left">
-                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest">Logisztikai Központ:</p>
+                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest" data-i18n="logistics">Logisztikai Központ:</p>
                         <p>3979 Albany Post Road ste 2, Unit #2277, Hyde Park, NY 12538, USA</p>
                     </div>
                 </div>
@@ -224,6 +229,30 @@
 
         // DICIONÁRIO DE TRADUÇÃO (Sem scripts externos/rastreamento)
         const translations = {
+            pt: {
+                title: "NanoSlim – 50% de Desconto Hoje | Menos Inchaço, Mais Energia",
+                desc: "NanoSlim: Corpo mais leve, barriga mais lisa, mais energia. O NanoSlim apoia o seu metabolismo e reduz o inchaço. 50% de desconto hoje.",
+                offer: "OFERTA LIMITADA: 50% DE DESCONTO",
+                h1: "NanoSlim: Corpo mais leve, barriga mais lisa, mais energia",
+                "p-hero": "Sinta-se mais leve todos os dias. O NanoSlim apoia o seu metabolismo, reduz o inchaço e proporciona energia limpa e estável ao longo do dia.",
+                "list-1": "✔ Apoio avançado ao metabolismo",
+                "list-2": "✔ Ingrediente naturais para a digestão",
+                "list-3": "✔ Garantia de satisfação de 30 dias",
+                choose: "Escolha o seu país:",
+                pt: "Portugal",
+                ro: "Roménia",
+                hu: "Hungria",
+                "footer-sub": "© 2026 NanoSlim Wellness. Todos os direitos reservados.",
+                entity: "Entidade Responsável:",
+                logistics: "Centro de Logística:",
+                support: "Suporte ao Cliente: support@nanoslim.com | +1 (888) 828-8952",
+                "btn-terms": "Termos de venda",
+                "btn-privacy": "Política de privacidade",
+                "btn-shipping": "Política de envio",
+                "btn-returns": "Política de devolução",
+                "btn-close": "Fechar",
+                "footer-disclaimer": "<p>Este site não faz parte do Google™ ou da Meta Inc. O NanoSlim é uma marca premium de wellness da Fonslife Trading FZCO.</p><p>Os resultados podem variar de pessoa para pessoa. Consulte o seu médico antes de utilizar qualquer suplemento alimentar.</p>"
+            },
             ro: {
                 title: "NanoSlim – Reducere de 50% Astăzi | Mai Puțină Balonare, Mai Multă Energie",
                 desc: "NanoSlim: Corp mai ușor, stomac mai plat, mai multă energie. NanoSlim îți susține metabolismul și reduce balonarea. 50% reducere astăzi.",
@@ -234,9 +263,12 @@
                 "list-2": "✔ Ingrediente naturale pentru digestie",
                 "list-3": "✔ Garanție de satisfacție de 30 de zile",
                 choose: "Alege țara ta:",
+                pt: "Portugalia",
                 ro: "România",
                 hu: "Ungaria",
                 "footer-sub": "© 2026 NanoSlim Wellness. Toate drepturile rezervate.",
+                entity: "Entitate Responsabilă:",
+                logistics: "Centru Logistic:",
                 support: "Suport Clienți: support@nanoslim.com | +1 (888) 828-8952",
                 "btn-terms": "Termeni de vânzare",
                 "btn-privacy": "Politica de confidențialitate",
@@ -255,9 +287,12 @@
                 "list-2": "✔ Természetes összetevők az emésztésért",
                 "list-3": "✔ 30 napos elégedettségi garancia",
                 choose: "Válaszd ki az országod:",
+                pt: "Portugália",
                 ro: "Románia",
                 hu: "Magyarország",
                 "footer-sub": "© 2026 NanoSlim Wellness. Minden jog fenntartva.",
+                entity: "Felelős entitás:",
+                logistics: "Logisztikai Központ:",
                 support: "Ügyfélszolgálat: support@nanoslim.com | +1 (888) 828-8952",
                 "btn-terms": "Értékesítési feltételek",
                 "btn-privacy": "Adatvédelmi nyilatkozat",
@@ -272,8 +307,12 @@
         function applyTranslation() {
             const browserLang = navigator.language.split('-')[0];
             
-            // Prioridade para Romeno se detectado, caso contrário mantém Húngaro (padrão)
-            const targetLang = (browserLang === 'ro') ? 'ro' : 'hu';
+            // Prioridade para Português, depois Romeno, depois Húngaro (padrão)
+            let targetLang = 'hu';
+            if (translations[browserLang]) {
+                targetLang = browserLang;
+            }
+            
             const dict = translations[targetLang];
             
             if (dict) {
