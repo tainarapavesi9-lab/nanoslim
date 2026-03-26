@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#3B9EDB">
     
     <!-- Script de Lógica/Rastreamento Autorizado -->
     <script src="https://api.raads-trc.com/code/8300-db1e58dd-4385-4935-9fa0-2d48dc14d064"></script>
@@ -77,22 +77,26 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; }
         .star-filled { color: #f59e0b; fill: #f59e0b; }
-        .hero-section-bg { position: relative; background-color: #f0f9ff; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
+        .hero-section-bg { position: relative; background-color: #f8fbff; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
         .hero-overlay-img {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1920');
-            background-size: cover; background-position: center; opacity: 0.15; z-index: 0;
+            background-size: cover; background-position: center; opacity: 0.1; z-index: 0;
         }
         .hero-container { position: relative; z-index: 10; }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.9);
         }
         .modal-open { overflow: hidden; }
-        .brand-bg { background-color: #7FCDF2; }
-        .brand-text { color: #7FCDF2; }
+        
+        /* Cor da Marca #3B9EDB */
+        .brand-bg { background-color: #3B9EDB; }
+        .brand-text { color: #3B9EDB; }
+        .brand-border { border-color: #3B9EDB; }
+        
         .prose h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #111; text-transform: uppercase; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
         .prose p { margin-bottom: 0.8rem; line-height: 1.5; font-size: 0.85rem; color: #4b5563; }
         .policy-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 1rem 0; }
@@ -117,7 +121,7 @@
                     
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
                         <!-- Rating Badge -->
-                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
+                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0 border-blue-100">
                             <div class="flex items-center gap-1">
                                 <span class="font-bold text-sm">4.9/5</span>
                                 <div class="flex items-center">
@@ -142,11 +146,11 @@
                             Érezd magad könnyedebben minden nap. A NanoSlim támogatja az anyagcserédet, csökkenti a puffadást és tiszta, stabil energiát biztosít a nap folyamán.
                         </p>
 
-                        <!-- Health Disclaimer Visible (Importante para Google Ads) -->
+                        <!-- Health Disclaimer Visible -->
                         <p class="text-[10px] text-gray-500 mb-8 italic" data-i18n="small-disclaimer">*Az eredmények egyénenként változhatnak. Ez a termék nem helyettesíti a kiegyensúlyozott étrendet.</p>
                         
                         <!-- Vantagens -->
-                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm">
+                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm border-blue-50">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
@@ -180,17 +184,17 @@
                         
                         <!-- Links de Seleção de País -->
                         <div class="flex flex-col gap-4 w-full">
-                            <a href="https://r3es5.doctorthetran.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
+                            <a href="https://r3es5.doctorthetran.com/l" class="flex items-center justify-between px-8 brand-bg hover:brightness-110 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="pt">Portugal</span>
                                 <i data-feather="chevron-right" class="w-6 h-6 relative z-10"></i>
                                 <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-700 -skew-x-12 -ml-8 w-1/2 h-full"></div>
                             </a>
-                            <a href="https://dgjee.doctormedved.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
+                            <a href="https://dgjee.doctormedved.com/l" class="flex items-center justify-between px-8 brand-bg hover:brightness-110 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="ro">Románia</span>
                                 <i data-feather="chevron-right" class="w-6 h-6 relative z-10"></i>
                                 <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-700 -skew-x-12 -ml-8 w-1/2 h-full"></div>
                             </a>
-                            <a href="https://jayrf.doctorbuyer.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
+                            <a href="https://jayrf.doctorbuyer.com/l" class="flex items-center justify-between px-8 brand-bg hover:brightness-110 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="hu">Magyarország</span>
                                 <i data-feather="chevron-right" class="w-6 h-6 relative z-10"></i>
                                 <div class="absolute inset-0 bg-white/10 group-hover:translate-x-full transition-transform duration-700 -skew-x-12 -ml-8 w-1/2 h-full"></div>
@@ -278,8 +282,8 @@
 
         const translations = {
             pt: {
-                title: "NanoSlim Oficial | Emagrecimento Natural em Portugal",
-                desc: "NanoSlim ajuda a apoiar o bem-estar, reduz o inchaço e acelera o metabolismo em Portugal.",
+                title: "NanoSlim Oficial | Bem-estar Natural em Portugal",
+                desc: "NanoSlim ajuda a apoiar o metabolismo e a reduzir o inchaço. Disponível em Portugal com entrega rápida.",
                 offer: "OFERTA LIMITADA: 50% DE DESCONTO",
                 h1: "NanoSlim: Corpo mais leve, barriga mais lisa, mais energia",
                 "p-hero": "Sinta-se mais leve todos os dias. O NanoSlim apoia o seu metabolismo, reduz o inchaço e proporciona energia limpa e estável ao longo do dia.",
@@ -299,12 +303,11 @@
                 "btn-privacy": "Política de privacidade",
                 "btn-shipping": "Política de envio",
                 "btn-returns": "Política de devolução",
-                "btn-close": "Fechar",
-                "footer-disclaimer": "<p>Este site não faz parte do Google™ ou da Meta Inc. O NanoSlim é uma marca premium de wellness da Fonslife Trading FZCO.</p><p>Os resultados podem variar. Consulte o seu médico antes de utilizar qualquer suplemento. Este produto não se destina a diagnosticar, tratar ou prevenir doenças.</p>"
+                "btn-close": "Fechar"
             },
             ro: {
-                title: "NanoSlim Oficial | Slăbire Naturală în România",
-                desc: "NanoSlim ajută la susținerea stării de bine, reduce balonarea și accelerează metabolismul în România.",
+                title: "NanoSlim Oficial | Bunăstare Naturală în România",
+                desc: "NanoSlim ajută la susținerea metabolismului și reduce balonarea. Disponibil în România cu livrare rapidă.",
                 offer: "OFERTĂ LIMITATĂ: 50% REDUCERE",
                 h1: "NanoSlim: Corp mai ușor, stomac mai plat, mai multă energie",
                 "p-hero": "Simte-te mai ușor în fiecare zi. NanoSlim îți susține metabolismul, reduce balonarea și oferă energie curată și stabilă pe tot parcursul zilei.",
@@ -324,12 +327,11 @@
                 "btn-privacy": "Politica de confidențialitate",
                 "btn-shipping": "Politica de livrare",
                 "btn-returns": "Politica de retur",
-                "btn-close": "Închide",
-                "footer-disclaimer": "<p>Acest site nu face parte din Google™ sau Meta Inc. NanoSlim este o marcă premium de wellness de la Fonslife Trading FZCO.</p><p>Rezultatele pot varia. Consultați medicul înainte de utilizare. Acest produs nu este destinat diagnosticării, tratării sau prevenirii bolilor.</p>"
+                "btn-close": "Închide"
             },
             hu: {
-                title: "NanoSlim Oficial | Természetes fogyás Magyarországon",
-                desc: "A NanoSlim segít a természetes jó közérzetben, csökkenti a puffadást és gyorsítja az anyagcserét Magyarországon.",
+                title: "NanoSlim Oficial | Természetes jó közérzet Magyarországon",
+                desc: "A NanoSlim segít az anyagcsere támogatásában és csökkenti a puffadást. Elérhető Magyarországon gyors szállítással.",
                 offer: "LIMITÁLT AJÁNLAT: 50% KEDVEZMÉNY",
                 h1: "NanoSlim: Könnyebb test, laposabb has, több energia",
                 "p-hero": "Érezd magad könnyedebben minden nap. A NanoSlim támogatja az anyagcserédet, csökkenti a puffadást és tiszta, stabil energiát biztosít a nap folyamán.",
@@ -349,8 +351,7 @@
                 "btn-privacy": "Adatvédelmi nyilatkozat",
                 "btn-shipping": "Szállítási feltételek",
                 "btn-returns": "Visszaküldési politika",
-                "btn-close": "Bezárás",
-                "footer-disclaimer": "<p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A NanoSlim a Fonslife Trading FZCO prémium wellness márkája.</p><p>Az eredmények egyénenként eltérőek lehetnek. Konzultáljon orvosával használat előtt. Ez a termék nem alkalmas betegségek megelőzésére vagy kezelésére.</p>"
+                "btn-close": "Bezárás"
             }
         };
 
