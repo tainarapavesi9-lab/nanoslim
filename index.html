@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     
-    <!-- FAVICON (A termék képe alapján) -->
+    <!-- FAVICON -->
     <link rel="icon" href="images/nanoslim.png" type="image/png">
 
-    <!-- SEO FEJLÉC -->
-    <title id="meta-title">NanoSlim – 70% kedvezmény ma | Kevesebb puffadás, több energia | Ingyenes szállítás</title>
+    <!-- SEO & META (Alapértelmezett: Magyar) -->
+    <title id="meta-title">NanoSlim – 70% kedvezmény ma | Kevesebb puffadás, több energia</title>
     <meta name="description" id="meta-desc" content="NanoSlim: Prémium wellness kiegészítő természetes összetevőkkel, amelyek segíthetnek a puffadás csökkentésében és az energiaszint növelésében. 70% kedvezmény ma." />
-    <meta name="keywords" id="meta-keywords" content="NanoSlim, fogyás, detox, wellness, puffadás ellen, lapos has, energia, emésztés, Románia, Magyarország" />
+    <meta name="keywords" id="meta-keywords" content="NanoSlim, fogyás, detox, wellness, puffadás ellen, lapos has, energia, emésztés, Magyarország, Románia" />
     <meta name="robots" content="index,follow" />
 
-    <!-- UI Eszközök -->
+    <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -37,10 +37,9 @@
         }
         .modal-open { overflow: hidden; }
         
-        /* Márka színe #7FCDF2 */
+        /* Cor da Marca #7FCDF2 */
         .brand-bg { background-color: #7FCDF2; }
         .brand-text { color: #7FCDF2; }
-        .brand-border { border-color: #7FCDF2; }
         
         .prose h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #111; text-transform: uppercase; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
         .prose p { margin-bottom: 0.8rem; line-height: 1.5; font-size: 0.85rem; color: #4b5563; }
@@ -59,14 +58,14 @@
     </header>
 
     <main>
-        <section id="order" class="hero-section-bg" aria-label="Rendelési szekció">
+        <section id="order" class="hero-section-bg" aria-label="Order Section">
             <div class="hero-overlay-img"></div>
             
             <div class="container mx-auto px-6 py-10 md:py-16 hero-container">
                 <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-center">
                     
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
-                        <!-- Értékelés és Akció -->
+                        <!-- Értékelés -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
                             <div class="flex items-center gap-1">
                                 <span class="font-bold text-sm">4.9/5</span>
@@ -92,26 +91,26 @@
                             Érezd magad könnyedebben minden nap. A NanoSlim támogatja az anyagcserédet, csökkenti a puffadást és tiszta, stabil energiát biztosít a nap folyamán.
                         </p>
                         
-                        <!-- ELŐNYÖK LISTÁJA -->
+                        <!-- ELŐNYÖK -->
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-1">Fejlett anyagcsere-támogatás</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-1">✔ Fejlett anyagcsere-támogatás</span>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-2">Természetes összetevők az emésztésért</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-2">✔ Természetes összetevők az emésztésért</span>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-3">30 napos elégedettségi garancia</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-3">✔ 30 napos elégedettségi garancia</span>
                                 </li>
                             </ul>
                         </div>
@@ -120,12 +119,12 @@
                     <div class="flex flex-col gap-4 reveal">
                         <!-- Termékkép -->
                         <div class="flex justify-center mb-4">
-                            <img src="images/nanoslim.png" alt="NanoSlim Termékkép" class="w-full max-w-sm h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+                            <img src="images/nanoslim.png" alt="NanoSlim" class="w-full max-w-sm h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
                         </div>
 
                         <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2" data-i18n="choose">Válaszd ki az országod:</p>
                         
-                        <!-- Országválasztók -->
+                        <!-- Országválasztó Linkek -->
                         <div class="flex flex-col gap-4 w-full">
                             <a href="https://dgjee.doctormedved.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="ro">Románia</span>
@@ -146,23 +145,18 @@
 
     <footer class="bg-gray-950 text-gray-300 py-12 border-t border-gray-900">
         <div class="container mx-auto px-6 text-center text-sm">
-            <p class="font-bold text-white text-lg mb-2" data-i18n="footer-copy">NANOSLIM</p>
+            <p class="font-bold text-white text-lg mb-2">NANOSLIM</p>
             <p class="text-gray-400 mb-6" data-i18n="footer-sub">&copy; 2026 NanoSlim Wellness. Minden jog fenntartva.</p>
-            
-            <div class="inline-flex items-center gap-2 bg-blue-900/30 px-4 py-2 rounded-full mb-10 border border-blue-800/50">
-                <i data-feather="check-circle" class="w-4 h-4 brand-text"></i>
-                <span class="text-xs text-blue-200" data-i18n="auth-retailer">Hivatalos Globális NanoSlim Viszonteladó</span>
-            </div>
             
             <div class="mb-10 text-gray-500 text-[11px] space-y-6 max-w-xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="text-center md:text-left">
-                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest" data-i18n="entity">Felelős entitás:</p>
+                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest">Felelős entitás:</p>
                         <p>Fonslife Trading FZCO | License 39314</p>
                         <p>Dubai Silicon Oasis, DDP, Building A1, Dubai, UAE</p>
                     </div>
                     <div class="text-center md:text-left">
-                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest" data-i18n="correspondence">Logisztikai Központ:</p>
+                        <p class="text-gray-400 uppercase font-bold text-[10px] mb-2 tracking-widest">Logisztikai Központ:</p>
                         <p>3979 Albany Post Road ste 2, Unit #2277, Hyde Park, NY 12538, USA</p>
                     </div>
                 </div>
@@ -180,7 +174,7 @@
 
             <div class="border-t border-gray-900 pt-8 text-[10px] text-gray-600 max-w-3xl mx-auto space-y-3 leading-relaxed opacity-70" data-i18n="footer-disclaimer">
                 <p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A NanoSlim a Fonslife Trading FZCO prémium wellness márkája.</p>
-                <p>Az eredmények egyénenként eltérőek lehetnek az anyagcserétől és az életmódtól függően. Konzultáljon orvosával, mielőtt bármilyen új étrend-kiegészítőt kezdene használni.</p>
+                <p>Az eredmények egyénenként eltérőek lehetnek. Konzultáljon orvosával bármilyen étrend-kiegészítő használata előtt.</p>
             </div>
         </div>
     </footer>
@@ -192,7 +186,7 @@
             <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
                 <div class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-4xl max-h-[85vh] flex flex-col border border-gray-100">
                     <div class="bg-white px-8 py-5 border-b border-gray-100 flex justify-between items-center sticky top-0 z-20">
-                        <h3 class="text-lg font-bold text-gray-900 tracking-tight" id="modal-title">NanoSlim Jogi Nyilatkozat</h3>
+                        <h3 class="text-lg font-bold text-gray-900 tracking-tight" id="modal-title">Legal</h3>
                         <button type="button" onclick="closeModal()" class="rounded-full p-2 bg-gray-50 text-gray-400 hover:text-gray-900 hover:bg-gray-100 transition-all">
                             <i data-feather="x" class="h-5 w-5"></i>
                         </button>
@@ -201,7 +195,7 @@
                         <div class="prose prose-sm max-w-none text-gray-600" id="modal-content-area"></div>
                     </div>
                     <div class="bg-gray-50 px-8 py-5 flex flex-col sm:flex-row-reverse gap-3 border-t border-gray-100">
-                        <button type="button" onclick="closeModal()" class="w-full inline-flex justify-center rounded-2xl brand-bg px-8 py-3 text-sm font-bold text-white shadow-lg hover:brightness-110 sm:w-auto transition-all" data-i18n="btn-close">Bezárás</button>
+                        <button type="button" onclick="closeModal()" class="w-full inline-flex justify-center rounded-2xl brand-bg px-8 py-3 text-sm font-bold text-white shadow-lg sm:w-auto transition-all" data-i18n="btn-close">Close</button>
                     </div>
                 </div>
             </div>
@@ -209,10 +203,10 @@
     </div>
 
     <script>
-        // Ikonok behelyettesítése
+        // Feather Icons Init
         feather.replace();
 
-        // Animációk
+        // Reveal Animations Logic
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
@@ -225,111 +219,99 @@
         window.addEventListener("load", reveal);
         reveal();
 
-        // FORDÍTÁSOK
+        // TRADUCTION DICTIONARY
         const translations = {
             ro: {
                 title: "NanoSlim – Reducere de 70% Astăzi | Mai Puțină Balonare, Mai Multă Energie",
-                desc: "NanoSlim: Supliment premium pentru bunăstare cu ingrediente naturale care pot ajuta la reducerea balonării și creșterea energiei. Reducere de 70% astăzi.",
+                desc: "NanoSlim: Corp mai ușor, stomac mai plat, mai multă energie. NanoSlim îți susține metabolismul și reduce balonarea.",
                 offer: "OFERTĂ LIMITATĂ: 70% REDUCERE",
-                h1: "NanoSlim:<br> Bunăstare, stomac mai plat<br> și mai multă energie",
-                "p-hero": "Experimentează un început mai ușor. NanoSlim este conceput pentru a-ți susține metabolismul, a reduce balonarea și a oferi un plus de energie pe parcursul zilei.",
-                "list-1": "Suport avansat pentru metabolism",
-                "list-2": "Ingrediente naturale pentru digestie",
-                "list-3": "Garanție de satisfacție de 30 de zile",
+                h1: "NanoSlim: Corp mai ușor, stomac mai plat, mai multă energie",
+                "p-hero": "Simte-te mai ușor în fiecare zi. NanoSlim îți susține metabolismul, reduce balonarea și oferă energie curată și stabilă pe tot parcursul zilei.",
+                "list-1": "✔ Suport avansat pentru metabolism",
+                "list-2": "✔ Ingrediente naturale pentru digestie",
+                "list-3": "✔ Garanție de satisfacție de 30 de zile",
                 choose: "Alege țara ta:",
-                ro: "România", hu: "Ungaria",
-                "btn-terms": "Termeni de Vânzare",
-                "btn-privacy": "Politică de Confidențialitate",
-                "btn-shipping": "Politică de Livrare",
-                "btn-returns": "Politică de Retur",
+                ro: "România",
+                hu: "Ungaria",
+                "footer-sub": "© 2026 NanoSlim Wellness. Toate drepturile rezervate.",
+                support: "Suport Clienți: support@nanoslim.com | +1 (888) 828-8952",
+                "btn-terms": "Termeni de vânzare",
+                "btn-privacy": "Politica de confidențialitate",
+                "btn-shipping": "Politica de livrare",
+                "btn-returns": "Politica de retur",
                 "btn-close": "Închide",
-                "footer-copy": "NANOSLIM",
-                "footer-sub": "© 2026 NanoSlim Wellness. Toate drepturile rezervate."
+                "footer-disclaimer": "<p>Acest site nu face parte din Google™ sau Meta Inc. NanoSlim este o marcă premium de wellness de la Fonslife Trading FZCO.</p><p>Rezultatele pot varia de la persoană la persoană. Consultați medicul înainte de a utiliza orice supliment alimentar.</p>"
             },
             hu: {
                 title: "NanoSlim – 70% kedvezmény ma | Kevesebb puffadás, több energia",
-                desc: "NanoSlim: Prémium wellness kiegészítő természetes összetevőkkel, amelyek segíthetnek a puffadás csökkentésében és az energiaszint növelésében. 70% kedvezmény ma.",
+                desc: "NanoSlim: Könnyebb test, laposabb has, több energia. A NanoSlim támogatja az anyagcserédet és csökkenti a puffadást.",
                 offer: "LIMITÁLT AJÁNLAT: 70% KEDVEZMÉNY",
                 h1: "NanoSlim: Könnyebb test, laposabb has, több energia",
                 "p-hero": "Érezd magad könnyedebben minden nap. A NanoSlim támogatja az anyagcserédet, csökkenti a puffadást és tiszta, stabil energiát biztosít a nap folyamán.",
-                "list-1": "Fejlett anyagcsere-támogatás",
-                "list-2": "Természetes összetevők az emésztésért",
-                "list-3": "30 napos elégedettségi garancia",
+                "list-1": "✔ Fejlett anyagcsere-támogatás",
+                "list-2": "✔ Természetes összetevők az emésztésért",
+                "list-3": "✔ 30 napos elégedettségi garancia",
                 choose: "Válaszd ki az országod:",
-                ro: "Románia", hu: "Magyarország",
+                ro: "Románia",
+                hu: "Magyarország",
+                "footer-sub": "© 2026 NanoSlim Wellness. Minden jog fenntartva.",
+                support: "Ügyfélszolgálat: support@nanoslim.com | +1 (888) 828-8952",
                 "btn-terms": "Értékesítési feltételek",
                 "btn-privacy": "Adatvédelmi nyilatkozat",
                 "btn-shipping": "Szállítási feltételek",
                 "btn-returns": "Visszaküldési politika",
                 "btn-close": "Bezárás",
-                "footer-copy": "NANOSLIM",
-                "footer-sub": "© 2026 NanoSlim Wellness. Minden jog fenntartva."
+                "footer-disclaimer": "<p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A NanoSlim a Fonslife Trading FZCO prémium wellness márkája.</p><p>Az eredmények egyénenként eltérőek lehetnek. Konzultáljon orvosával bármilyen étrend-kiegészítő használata előtt.</p>"
             }
         };
 
+        // AUTO-DETECTION & APPLY TRANSLATION
         function applyTranslation() {
-            // Megpróbáljuk kitalálni a nyelvet, de ha magyar tartalom van megadva, az legyen az alapértelmezett
-            const userLang = navigator.language.split('-')[0];
-            const dict = translations[userLang] || translations['hu'];
+            const browserLang = navigator.language.split('-')[0];
+            
+            // Prioridade para Romeno se detectado, caso contrário mantém Húngaro (padrão)
+            const targetLang = (browserLang === 'ro') ? 'ro' : 'hu';
+            const dict = translations[targetLang];
             
             if (dict) {
+                // Update visible UI text
                 document.querySelectorAll('[data-i18n]').forEach(el => {
                     const key = el.getAttribute('data-i18n');
                     if (dict[key]) { el.innerHTML = dict[key]; }
                 });
+                
+                // Update SEO Meta Tags
                 if (dict.title) document.title = dict.title;
                 if (dict.desc) document.querySelector('meta[name="description"]').setAttribute('content', dict.desc);
-                document.documentElement.lang = userLang === 'ro' ? 'ro' : 'hu';
+                
+                // Update HTML lang attribute
+                document.documentElement.lang = targetLang;
             }
         }
 
         window.addEventListener('DOMContentLoaded', applyTranslation);
 
-        // Modális ablakok logikája
+        // Modal Logic
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
             terms: {
-                title: "ÉRTÉKESÍTÉSI FELTÉTELEK",
-                content: `<div class="space-y-4">
-                    <p class="font-bold">A NanoSlim megrendelésével ön elfogadja az alábbi feltételeket.</p>
-                    <h4>Termékhasználat</h4>
-                    <p>A termékek kizárólag személyes használatra szolgálnak. Viszonteladásuk tilos.</p>
-                    <h4>Garancia</h4>
-                    <p>30 napos pénzvisszafizetési garanciát vállalunk, ha nem elégedett az eredményekkel.</p>
-                </div>`
+                title: "Terms & Conditions",
+                content: `<div class="space-y-4"><p>A termékek kizárólag személyes használatra szolgálnak. A 30 napos garancia a kézhezvételtől számítva érvényes.</p></div>`
             },
             privacy: {
-                title: "ADATVÉDELMI NYILATKOZAT",
-                content: `<div class="space-y-4">
-                    <p>Nagyra értékeljük a magánéletét. Adatait kizárólag a rendelés teljesítésére és a felhasználói élmény javítására használjuk fel.</p>
-                    <table class="policy-table">
-                        <thead><tr><th>Adat</th><th>Cél</th></tr></thead>
-                        <tbody>
-                            <tr><td>Név és cím</td><td>Szállítás</td></tr>
-                            <tr><td>Email</td><td>Rendelés állapota</td></tr>
-                        </tbody>
-                    </table>
-                </div>`
+                title: "Privacy Policy",
+                content: `<div class="space-y-4"><p>Az adatait biztonságosan kezeljük és nem osztjuk meg harmadik felekkel reklámcélokból.</p></div>`
             },
             shipping: {
-                title: "SZÁLLÍTÁSI FELTÉTELEK",
-                content: `<div class="space-y-4">
-                    <h4>Szállítási idők</h4>
-                    <ul>
-                        <li><strong>Románia:</strong> 2-4 munkanap</li>
-                        <li><strong>Magyarország:</strong> 2-4 munkanap</li>
-                    </ul>
-                    <p>Minden rendelésre standard kezelési költség vonatkozik, kivéve ha az ingyenes szállítás promóció aktív.</p>
-                </div>`
+                title: "Shipping Policy",
+                content: `<div class="space-y-4"><p>Szállítás Magyarországra és Romániába: 2-4 munkanap.</p></div>`
             },
             returns: {
-                title: "VISSZAKÜLDÉSI POLITIKA",
-                content: `<div class="space-y-4">
-                    <p>A bontatlan termékeket a kézhezvételtől számított 30 napon belül visszaküldheti. Forduljon a support@nanoslim.com címhez a visszaküldés engedélyezéséhez.</p>
-                </div>`
+                title: "Return Policy",
+                content: `<div class="space-y-4"><p>Bontatlan termékeket 30 napon belül visszaküldhet teljes pénzvisszatérítésért.</p></div>`
             }
         };
 
