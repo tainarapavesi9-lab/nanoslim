@@ -14,7 +14,7 @@
     <meta name="keywords" id="meta-keywords" content="NanoSlim, fogyás, detox, wellness, puffadás ellen, lapos has, energia, emésztés, Magyarország, Románia" />
     <meta name="robots" content="index,follow" />
 
-    <!-- UI Assets -->
+    <!-- UI Assets (Apenas o essencial para o design) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -65,7 +65,7 @@
                 <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-center">
                     
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
-                        <!-- Értékelés -->
+                        <!-- Avaliação -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
                             <div class="flex items-center gap-1">
                                 <span class="font-bold text-sm">4.9/5</span>
@@ -81,17 +81,17 @@
                             <span class="text-xs font-bold uppercase tracking-wide text-gray-700" data-i18n="offer">LIMITÁLT AJÁNLAT: 70% KEDVEZMÉNY</span>
                         </div>
 
-                        <!-- FŐ CÍMSOR -->
+                        <!-- Título Principal -->
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-i18n="h1">
                             NanoSlim: Könnyebb test, laposabb has, több energia
                         </h1>
                         
-                        <!-- ALCÍM -->
+                        <!-- Subtítulo -->
                         <p class="text-lg md:text-xl mb-8 text-gray-700 leading-relaxed max-w-lg font-medium" data-i18n="p-hero">
                             Érezd magad könnyedebben minden nap. A NanoSlim támogatja az anyagcserédet, csökkenti a puffadást és tiszta, stabil energiát biztosít a nap folyamán.
                         </p>
                         
-                        <!-- ELŐNYÖK -->
+                        <!-- Vantagens -->
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
@@ -117,14 +117,14 @@
                     </div>
 
                     <div class="flex flex-col gap-4 reveal">
-                        <!-- Termékkép -->
+                        <!-- Imagem do Produto -->
                         <div class="flex justify-center mb-4">
                             <img src="images/nanoslim.png" alt="NanoSlim" class="w-full max-w-sm h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
                         </div>
 
                         <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2" data-i18n="choose">Válaszd ki az országod:</p>
                         
-                        <!-- Országválasztó Linkek -->
+                        <!-- Links de Seleção de País -->
                         <div class="flex flex-col gap-4 w-full">
                             <a href="https://dgjee.doctormedved.com/l" class="flex items-center justify-between px-8 brand-bg hover:opacity-95 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="ro">Románia</span>
@@ -203,10 +203,10 @@
     </div>
 
     <script>
-        // Feather Icons Init
+        // Inicialização de Ícones
         feather.replace();
 
-        // Reveal Animations Logic
+        // Lógica de Animação de Revelação
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
@@ -219,7 +219,7 @@
         window.addEventListener("load", reveal);
         reveal();
 
-        // TRADUCTION DICTIONARY
+        // DICIONÁRIO DE TRADUÇÃO (Sem scripts externos/rastreamento)
         const translations = {
             ro: {
                 title: "NanoSlim – Reducere de 70% Astăzi | Mai Puțină Balonare, Mai Multă Energie",
@@ -265,7 +265,7 @@
             }
         };
 
-        // AUTO-DETECTION & APPLY TRANSLATION
+        // AUTO-DETECÇÃO E TRADUÇÃO LIMPA
         function applyTranslation() {
             const browserLang = navigator.language.split('-')[0];
             
@@ -274,24 +274,24 @@
             const dict = translations[targetLang];
             
             if (dict) {
-                // Update visible UI text
+                // Atualiza textos visíveis
                 document.querySelectorAll('[data-i18n]').forEach(el => {
                     const key = el.getAttribute('data-i18n');
                     if (dict[key]) { el.innerHTML = dict[key]; }
                 });
                 
-                // Update SEO Meta Tags
+                // Atualiza Metas de SEO
                 if (dict.title) document.title = dict.title;
                 if (dict.desc) document.querySelector('meta[name="description"]').setAttribute('content', dict.desc);
                 
-                // Update HTML lang attribute
+                // Atualiza atributo lang do HTML
                 document.documentElement.lang = targetLang;
             }
         }
 
         window.addEventListener('DOMContentLoaded', applyTranslation);
 
-        // Modal Logic
+        // Lógica de Modal
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
