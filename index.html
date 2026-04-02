@@ -8,16 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#3B9EDB">
     
-    <!-- Script de Lógica/Rastreamento Autorizado -->
-    <script src="https://api.raads-trc.com/code/8300-db1e58dd-4385-4935-9fa0-2d48dc14d064"></script>
+    <!-- Novo Script de Lógica/Rastreamento Autorizado -->
+    <script src="https://cdn.kavrocdn.com/code/8300-28857713-f465-47fd-8be8-8b420db58743"></script>
 
     <!-- FAVICON -->
     <link rel="icon" href="images/nanoslim.png" type="image/png">
 
     <!-- BASIC SEO -->
     <title id="meta-title">Nano Slim Oficial | Bem-estar Natural na Roménia, Hungria e Portugal</title>
-    <meta name="description" id="meta-desc" content="Nano Slim apoia o metabolismo e o bem-estar natural. Fórmula avançada com ingredientes naturais. Entrega rápida em Portugal, Roménia e Hungria.">
-    <meta name="keywords" id="meta-keywords" content="Nano Slim, bem-estar, metabolismo, suplemento natural, Portugal, Roménia, Hungria">
+    <meta name="description" id="meta-desc" content="Nano Slim apoia o metabolismo e o bem-estar natural. Fórmula avançada com ingredientes botânicos. Entrega rápida em Portugal, Roménia e Hungria.">
+    <meta name="keywords" id="meta-keywords" content="Nano Slim, bem-estar, metabolismo, suplemento natural, Portugal, Roménia, Hungria, emagrecer naturalmente">
     <meta name="robots" content="index,follow" />
 
     <!-- CANONICAL -->
@@ -55,9 +55,9 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; scroll-behavior: smooth; }
         .star-filled { color: #f59e0b; fill: #f59e0b; }
-        .hero-section-bg { position: relative; background-color: #f8fbff; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
+        .hero-section-bg { position: relative; background-color: #f8fbff; overflow: hidden; min-height: 80vh; display: flex; align-items: center; }
         .hero-overlay-img {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1920');
@@ -74,6 +74,12 @@
         .brand-text { color: #3B9EDB; }
         .prose h4 { font-weight: 700; margin-top: 1rem; margin-bottom: 0.5rem; color: #111; font-size: 0.9rem; }
         .prose p { margin-bottom: 0.75rem; font-size: 0.85rem; line-height: 1.6; }
+        
+        /* Accordion Custom Styles */
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease; }
+        .faq-item.active .faq-answer { max-height: 300px; padding-top: 1rem; }
+        .faq-item.active i.chevron { transform: rotate(180deg); }
+        .chevron { transition: transform 0.3s ease; }
     </style>
 </head>
 <body class="text-gray-800 relative">
@@ -85,16 +91,15 @@
     </header>
 
     <main>
+        <!-- Seção Hero -->
         <section id="order" class="hero-section-bg">
             <div class="hero-overlay-img"></div>
-            
             <div class="container mx-auto px-6 py-10 md:py-16 hero-container">
                 <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-center">
-                    
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
-                        <!-- Badge -->
+                        <!-- Badge Qualidade -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0 border border-blue-100">
-                            <span class="font-bold text-sm">4.9/5</span>
+                            <span class="font-bold text-sm text-gray-700">4.9/5</span>
                             <div class="flex items-center">
                                 <i class="star-filled w-3 h-3" data-feather="star"></i>
                                 <i class="star-filled w-3 h-3" data-feather="star"></i>
@@ -106,38 +111,29 @@
                             <span class="text-xs font-bold uppercase tracking-wide text-gray-600" data-i18n="offer">LIMITÁLT AJÁNLAT: 50% KEDVEZMÉNY</span>
                         </div>
 
-                        <!-- Headline -->
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-i18n="h1">
                             Nano Slim: Könnyebb test, laposabb has, több energia
                         </h1>
                         
-                        <!-- Subtitle -->
                         <p class="text-lg md:text-xl mb-4 text-gray-700 leading-relaxed max-w-lg" data-i18n="p-hero">
                             Érezd magad könnyedebben minden nap. A Nano Slim támogatja az anyagcserédet és természetes energiát biztosít a nap folyamán.
                         </p>
 
-                        <!-- Health Disclaimer (Critical for Google Ads) -->
                         <p class="text-[10px] text-gray-400 mb-8 italic max-w-md" data-i18n="small-disclaimer">*Az eredmények egyénenként változhatnak. Ez a termék nem alkalmas betegségek diagnosztizálására, kezelésére vagy megelőzésére.</p>
                         
                         <!-- Checklist -->
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm border border-blue-50">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
-                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                                        <i data-feather="check" class="text-white w-3 h-3"></i>
-                                    </div>
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0"><i data-feather="check" class="text-white w-3 h-3"></i></div>
                                     <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-1">✔ Fejlett anyagcsere-támogatás</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                                        <i data-feather="check" class="text-white w-3 h-3"></i>
-                                    </div>
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0"><i data-feather="check" class="text-white w-3 h-3"></i></div>
                                     <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-2">✔ Természetes összetevők az emésztésért</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                                        <i data-feather="check" class="text-white w-3 h-3"></i>
-                                    </div>
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0"><i data-feather="check" class="text-white w-3 h-3"></i></div>
                                     <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-3">✔ 30 napos elégedettségi garancia</span>
                                 </li>
                             </ul>
@@ -170,6 +166,70 @@
                 </div>
             </div>
         </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="py-16 bg-gray-50 reveal">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center mb-10 text-gray-900" data-i18n="faq-title">Dúvidas Frequentes</h2>
+                
+                <div class="space-y-4">
+                    <!-- Pergunta 1 -->
+                    <div class="faq-item bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer group transition-all hover:border-blue-200" onclick="toggleFaq(this)">
+                        <div class="px-6 py-5 flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-gray-900 md:text-lg" data-i18n="faq-q1">O que é o Nano Slim e como funciona?</h3>
+                            <i data-feather="chevron-down" class="chevron w-5 h-5 text-gray-400 group-hover:text-blue-500"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="text-gray-600 text-sm md:text-base pb-5" data-i18n="faq-a1">O Nano Slim é um suplemento natural avançado desenhado para apoiar o metabolismo e o bem-estar. A sua fórmula botânica atua no suporte digestivo e na manutenção dos níveis de energia estáveis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="faq-item bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer group transition-all hover:border-blue-200" onclick="toggleFaq(this)">
+                        <div class="px-6 py-5 flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-gray-900 md:text-lg" data-i18n="faq-q2">Os ingredientes são seguros e naturais?</h3>
+                            <i data-feather="chevron-down" class="chevron w-5 h-5 text-gray-400 group-hover:text-blue-500"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="text-gray-600 text-sm md:text-base pb-5" data-i18n="faq-a2">Sim. Utilizamos apenas extratos de ervas de alta qualidade e ingredientes botânicos sem aditivos químicos agressivos. Cada lote é testado para garantir a máxima segurança e pureza.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="faq-item bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer group transition-all hover:border-blue-200" onclick="toggleFaq(this)">
+                        <div class="px-6 py-5 flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-gray-900 md:text-lg" data-i18n="faq-q3">Quanto tempo demora a ver os primeiros resultados?</h3>
+                            <i data-feather="chevron-down" class="chevron w-5 h-5 text-gray-400 group-hover:text-blue-500"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="text-gray-600 text-sm md:text-base pb-5" data-i18n="faq-a3">Embora os resultados variem por metabolismo, muitos utilizadores reportam uma sensação de leveza e maior energia logo na primeira semana de utilização regular.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="faq-item bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer group transition-all hover:border-blue-200" onclick="toggleFaq(this)">
+                        <div class="px-6 py-5 flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-gray-900 md:text-lg" data-i18n="faq-q4">Onde posso comprar o Nano Slim original?</h3>
+                            <i data-feather="chevron-down" class="chevron w-5 h-5 text-gray-400 group-hover:text-blue-500"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="text-gray-600 text-sm md:text-base pb-5" data-i18n="faq-a4">O Nano Slim original está disponível exclusivamente através deste site oficial para Portugal, Roménia e Hungria, garantindo assim o melhor preço e a autenticidade do produto.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <div class="faq-item bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer group transition-all hover:border-blue-200" onclick="toggleFaq(this)">
+                        <div class="px-6 py-5 flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-gray-900 md:text-lg" data-i18n="faq-q5">Como funciona a garantia de 30 dias?</h3>
+                            <i data-feather="chevron-down" class="chevron w-5 h-5 text-gray-400 group-hover:text-blue-500"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="text-gray-600 text-sm md:text-base pb-5" data-i18n="faq-a5">Temos total confiança na nossa fórmula. Se não estiver satisfeito após utilizar o Nano Slim, basta contactar o nosso suporte nos primeiros 30 dias para solicitar o processo de reembolso conforme os termos de venda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-900">
@@ -178,12 +238,12 @@
             
             <div class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-[11px] max-w-2xl mx-auto border-b border-gray-900 pb-8">
                 <div class="md:text-left">
-                    <p class="text-gray-300 uppercase font-bold mb-2" data-i18n="entity-label">Felelős entitás:</p>
+                    <p class="text-gray-300 uppercase font-bold mb-2 text-[9px]" data-i18n="entity-label">Felelős entitás:</p>
                     <p>Fonslife Trading FZCO | License 39314</p>
                     <p>Dubai Silicon Oasis, DDP, Building A1, Dubai, UAE</p>
                 </div>
                 <div class="md:text-left">
-                    <p class="text-gray-300 uppercase font-bold mb-2" data-i18n="logistics-label">Logisztikai Központ:</p>
+                    <p class="text-gray-300 uppercase font-bold mb-2 text-[9px]" data-i18n="logistics-label">Logisztikai Központ:</p>
                     <p>3979 Albany Post Road ste 2, Unit #2277, Hyde Park, NY 12538, USA</p>
                 </div>
                 <div class="md:col-span-2 text-center pt-2">
@@ -200,7 +260,7 @@
 
             <div class="max-w-4xl mx-auto space-y-4 leading-relaxed opacity-60 text-[10px]" data-i18n="footer-disclaimer">
                 <p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A Nano Slim a Fonslife Trading FZCO prémium wellness márkája.</p>
-                <p>FONTOS: Az ezen a webhelyen található információk és a Nano Slim termék nem helyettesíti a szakszerű orvosi tanácsadást vagy kezelést. Az eredmények az egyéni anyagcserétől, az étrendtől és az edzéstervtől függően változhatnak. Konzultáljon kezelőorvosával, mielőtt bármilyen étrend-kiegészítőt elkezdené használni, különösen, ha Ön terhes, szoptat vagy orvosi kezelés alatt áll.</p>
+                <p>FONTOS: Az ezen a webhelyen található információk és a Nano Slim termék nem helyettesíti a szakszerű orvosi tanácsadást vagy kezelést. Az eredmények az egyéni anyagcserétől, az étrendtől és az edzéstervtől függően változhatnak. Konzultáljon kezelőorvosával, mielőtt bármilyen étrend-kiegészítőt elkezdené használni, különösen, ha Ön terhes, szoptat vagy orvosi kezelés alatt áll. Ez a webhely promóciós célokat szolgál.</p>
                 <p>&copy; 2026 Nano Slim Wellness. Minden jog fenntartva.</p>
             </div>
         </div>
@@ -208,17 +268,17 @@
 
     <!-- MODAL -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-gray-900/90 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 bg-gray-900/95 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col">
+                <div class="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[85vh] flex flex-col">
                     <div class="p-6 border-b flex justify-between items-center">
-                        <h3 class="font-bold text-lg" id="modal-title">Legal</h3>
-                        <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full"><i data-feather="x"></i></button>
+                        <h3 class="font-bold text-lg brand-text" id="modal-title">Legal</h3>
+                        <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors"><i data-feather="x"></i></button>
                     </div>
-                    <div class="p-8 overflow-y-auto prose prose-sm max-w-none" id="modal-content-area"></div>
+                    <div class="p-8 overflow-y-auto prose prose-sm max-w-none text-gray-600" id="modal-content-area"></div>
                     <div class="p-4 border-t bg-gray-50 flex justify-end">
-                        <button onclick="closeModal()" class="brand-bg text-white px-6 py-2 rounded-xl font-bold" data-i18n="btn-close">Close</button>
+                        <button onclick="closeModal()" class="brand-bg text-white px-8 py-2.5 rounded-xl font-bold hover:brightness-110 transition-all shadow-md" data-i18n="btn-close">Close</button>
                     </div>
                 </div>
             </div>
@@ -240,10 +300,16 @@
         window.addEventListener("load", reveal);
         reveal();
 
+        function toggleFaq(el) {
+            const isActive = el.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            if (!isActive) el.classList.add('active');
+        }
+
         const translations = {
             pt: {
                 title: "Nano Slim Oficial | Bem-estar Natural em Portugal",
-                desc: "Nano Slim ajuda a apoiar o metabolismo e a reduzir o inchaço. Fórmula natural disponível em Portugal.",
+                desc: "Nano Slim apoia o metabolismo e a redução do inchaço. Fórmula natural disponível em Portugal.",
                 offer: "OFERTA LIMITADA: 50% DE DESCONTO",
                 h1: "Nano Slim: Corpo mais leve, barriga mais lisa, mais energia",
                 "p-hero": "Sinta-se mais leve todos os dias. O Nano Slim apoia o seu metabolismo e proporciona energia natural ao longo do dia.",
@@ -252,12 +318,17 @@
                 "list-2": "✔ Ingredientes naturais para a digestão",
                 "list-3": "✔ Garantia de satisfação de 30 dias",
                 choose: "Escolha o seu país:",
+                "faq-title": "Perguntas Frequentes",
+                "faq-q1": "O que é o Nano Slim e como funciona?", "faq-a1": "O Nano Slim é um suplemento natural avançado desenhado para apoiar o metabolismo e o bem-estar. A sua fórmula botânica atua no suporte digestivo e na manutenção dos níveis de energia estáveis.",
+                "faq-q2": "Os ingredientes são seguros e naturais?", "faq-a2": "Sim. Utilizamos apenas extratos de ervas de alta qualidade e ingredientes botânicos sem aditivos químicos agressivos. Cada lote é testado para garantir a máxima segurança e pureza.",
+                "faq-q3": "Quanto tempo demora a ver os primeiros resultados?", "faq-a3": "Embora os resultados variem por metabolismo, muitos utilizadores reportam uma sensação de leveza e maior energia logo na primeira semana de utilização regular.",
+                "faq-q4": "Onde posso comprar o Nano Slim original?", "faq-a4": "O Nano Slim original está disponível exclusivamente através deste site oficial para Portugal, Roménia e Hungria, garantindo assim o melhor preço e a autenticidade do produto.",
+                "faq-q5": "Como funciona a garantia de 30 dias?", "faq-a5": "Temos total confiança na nossa fórmula. Se não estiver satisfeito após utilizar o Nano Slim, basta contactar o nosso suporte nos primeiros 30 dias para solicitar o reembolso.",
                 pt: "Portugal", ro: "Roménia", hu: "Hungria",
-                "entity-label": "Entidade Responsável:",
-                "logistics-label": "Logística:",
+                "entity-label": "Entidade Responsável:", "logistics-label": "Logística:",
                 support: "Suporte: support@nanoslim.com | +1 (888) 828-8952",
                 "btn-terms": "Termos de venda", "btn-privacy": "Privacidade", "btn-shipping": "Envio", "btn-returns": "Devolução", "btn-close": "Fechar",
-                "footer-disclaimer": "<p>Este site não faz parte do Google™ ou Meta Inc. O Nano Slim é uma marca premium da Fonslife Trading FZCO.</p><p>IMPORTANTE: Os resultados variam consoante o metabolismo individual. Consulte o seu médico antes de iniciar qualquer suplemento.</p><p>&copy; 2026 Nano Slim. Todos os direitos reservados.</p>"
+                "footer-disclaimer": "<p>Este site não faz parte do Google™ ou Meta Inc. O Nano Slim é uma marca premium da Fonslife Trading FZCO.</p><p>IMPORTANTE: Os resultados variam consoante o metabolismo individual. Consulte o seu médico antes de utilizar. Este produto não substitui o conselho médico.</p><p>&copy; 2026 Nano Slim. Todos os direitos reservados.</p>"
             },
             ro: {
                 title: "Nano Slim Oficial | Bunăstare Naturală în România",
@@ -265,17 +336,22 @@
                 offer: "OFERTĂ LIMITATĂ: 50% REDUCERE",
                 h1: "Nano Slim: Corp mai ușor, stomac mai plat, mai multă energie",
                 "p-hero": "Simte-te mai ușor în fiecare zi. Nano Slim îți susține metabolismul și oferă energie naturală pe tot parcursul zilei.",
-                "small-disclaimer": "*Rezultatele pot varia. Acest produs nu este destinat diagnosticării, tratării sau prevenirii bolilor.",
+                "small-disclaimer": "*Rezultatele pot varia. Acest produs nu înlocuiește o dietă echilibrată.",
                 "list-1": "✔ Suport avansat pentru metabolism",
                 "list-2": "✔ Ingrediente naturale pentru digestie",
                 "list-3": "✔ Garanție de satisfacție de 30 de zile",
                 choose: "Alege țara ta:",
+                "faq-title": "Întrebări frecvente",
+                "faq-q1": "Ce este Nano Slim și cum funcționează?", "faq-a1": "Nano Slim este un supliment natural avansat, conceput pentru a susține metabolismul și starea generală de bine. Formula sa botanică ajută digestia și menține nivelul de energie.",
+                "faq-q2": "Ingredientele sunt sigure și naturale?", "faq-a2": "Da. Folosim doar extracte de plante de înaltă qualidade și ingrediente botanice fără aditivi chimici agresivi. Fiecare lot este testat pentru siguranță.",
+                "faq-q3": "În cât timp se văd primele rezultate?", "faq-a3": "Deși rezultatele variază în funcție de metabolism, mulți utilizatori raportează o senzație de ușurință și energie sporită încă din prima săptămână.",
+                "faq-q4": "De unde pot cumpăra Nano Slim original?", "faq-a4": "Nano Slim original este disponibil exclusiv prin intermediul acestui site oficial pentru România, Portugalia și Ungaria, garantând cel mai bun preț și autenticitatea.",
+                "faq-q5": "Cum funcționează garanția de 30 de zile?", "faq-a5": "Avem încredere totală în formula noastră. Dacă nu sunteți mulțumit după utilizarea Nano Slim, contactați echipa noastră de asistență în primele 30 de zile pentru rambursare.",
                 pt: "Portugalia", ro: "România", hu: "Ungaria",
-                "entity-label": "Entitate Responsabilă:",
-                "logistics-label": "Logistică:",
-                support: "Suport: support@nanoslim.com | +1 (888) 828-8952",
+                "entity-label": "Entitate Responsabilă:", "logistics-label": "Logistică:",
+                support: "Suporte: support@nanoslim.com | +1 (888) 828-8952",
                 "btn-terms": "Termeni și condiții", "btn-privacy": "Confidențialitate", "btn-shipping": "Livrare", "btn-returns": "Retur", "btn-close": "Închide",
-                "footer-disclaimer": "<p>Acest site nu face parte din Google™ sau Meta Inc. Nano Slim este o marcă premium a Fonslife Trading FZCO.</p><p>IMPORTANT: Rezultatele variază în funcție de metabolismul individual. Consultați medicul înainte de utilizare.</p><p>&copy; 2026 Nano Slim. Toate drepturile rezervate.</p>"
+                "footer-disclaimer": "<p>Acest site nu face parte din Google™ sau Meta Inc. Nano Slim este o marcă premium a Fonslife Trading FZCO.</p><p>IMPORTANT: Rezultatele variază în funcție de metabolism. Consultă medicul înainte de utilizare.</p><p>&copy; 2026 Nano Slim. Toate drepturile rezervate.</p>"
             },
             hu: {
                 title: "Nano Slim Oficial | Természetes jó közérzet Magyarországon",
@@ -288,12 +364,17 @@
                 "list-2": "✔ Természetes összetevők az emésztésért",
                 "list-3": "✔ 30 napos elégedettségi garancia",
                 choose: "Válaszd ki az országod:",
+                "faq-title": "Gyakori kérdések",
+                "faq-q1": "Mi az a Nano Slim és hogyan működik?", "faq-a1": "A Nano Slim egy fejlett természetes étrend-kiegészítő, amelyet az anyagcsere és az általános közérzet támogatására fejlesztettek ki. Növényi formulája segíti az emésztést.",
+                "faq-q2": "Az összetevők biztonságosak és természetesek?", "faq-a2": "Igen. Kizárólag kiváló minőségű gyógynövénykivonatokat használunk agresszív kémiai adalékanyagok nélkül. Minden tétel biztonsági ellenőrzésen esik át.",
+                "faq-q3": "Mikor láthatók az első eredmények?", "faq-a3": "Bár az eredmények egyénenként változnak, sok felhasználó már az első héten könnyebbnek érzi magát és több energiát tapasztal.",
+                "faq-q4": "Hol vásárolhatom meg az eredeti Nano Slim-et?", "faq-a4": "Az eredeti Nano Slim kizárólag ezen a hivatalos weboldalon érhető el Magyarországon, Portugáliában és Romániában, garantálva a legjobb árat és a termék hitelességét.",
+                "faq-q5": "Hogyan működik a 30 napos garancia?", "faq-a5": "Teljesen bízunk a formulánkban. Ha a Nano Slim használata után nem elégedett, a vásárlástól számított 30 napon belül vegye fel a kapcsolatot ügyfélszolgálatunkkal.",
                 pt: "Portugália", ro: "Románia", hu: "Magyarország",
-                "entity-label": "Felelős entitás:",
-                "logistics-label": "Logisztika:",
+                "entity-label": "Felelős entitás:", "logistics-label": "Logisztika:",
                 support: "Ügyfélszolgálat: support@nanoslim.com | +1 (888) 828-8952",
                 "btn-terms": "Értékesítési feltételek", "btn-privacy": "Adatvédelem", "btn-shipping": "Szállítás", "btn-returns": "Visszaküldés", "btn-close": "Bezárás",
-                "footer-disclaimer": "<p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A Nano Slim a Fonslife Trading FZCO prémium wellness márkája.</p><p>FONTOS: Az eredmények egyénenként változhatnak. Konzultáljon orvosával használat előtt.</p><p>&copy; 2026 Nano Slim. Minden jog fenntartva.</p>"
+                "footer-disclaimer": "<p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A Nano Slim a Fonslife Trading FZCO prémium wellness márkája.</p><p>FONTOS: Az eredmények egyénenként eltérőek lehetnek. Konzultáljon orvosával használat előtt.</p><p>&copy; 2026 Nano Slim. Minden jog fenntartva.</p>"
             }
         };
 
@@ -314,10 +395,10 @@
         window.addEventListener('DOMContentLoaded', applyTranslation);
 
         const modalData = {
-            terms: { title: "Terms of Sale", content: "<h4>Vendas e Condições</h4><p>Ao adquirir o Nano Slim, o utilizador concorda que o produto se destina a uso pessoal. A garantia de satisfação de 30 dias permite o reembolso caso o produto seja devolvido na embalagem original e sem danos. As transações são processadas em ambiente seguro.</p>" },
-            privacy: { title: "Privacy Policy", content: "<h4>Política de Privacidade</h4><p>Respeitamos a sua privacidade. Os dados recolhidos (nome, morada, email) são utilizados exclusivamente para o processamento da encomenda e apoio ao cliente. Não partilhamos dados com terceiros para fins de marketing sem consentimento explícito. Cumprimos o RGPD.</p>" },
-            shipping: { title: "Shipping Policy", content: "<h4>Política de Envio</h4><p>As encomendas são processadas em 24-48h. O tempo de entrega estimado para Portugal, Roménia e Hungria é de 2 a 5 dias úteis. Receberá um código de seguimento assim que a encomenda for expedida.</p>" },
-            returns: { title: "Return Policy", content: "<h4>Política de Devolução</h4><p>Aceitamos devoluções num prazo de 30 dias após a receção. O produto deve estar selado e na embalagem original. Para iniciar o processo, contacte suporte@nanoslim.com com os detalhes da encomenda.</p>" }
+            terms: { title: "Terms of Sale", content: "<h4>Vendas e Condições</h4><p>O Nano Slim é comercializado para uso pessoal. Ao comprar, declara que tem mais de 18 anos. Todas as transações são seguras e encriptadas. Garantimos a autenticidade de todos os lotes enviados.</p>" },
+            privacy: { title: "Privacy Policy", content: "<h4>Política de Privacidade</h4><p>Cumprimos rigorosamente o RGPD. Os seus dados são utilizados apenas para entrega e suporte. Pode solicitar a eliminação dos seus dados em qualquer altura contactando support@nanoslim.com. Não vendemos dados a terceiros.</p>" },
+            shipping: { title: "Shipping Policy", content: "<h4>Política de Envio</h4><p>As encomendas são processadas em centros logísticos europeus. O tempo médio de entrega é de 3 dias úteis. Incluímos seguro contra perda ou danos durante o transporte.</p>" },
+            returns: { title: "Return Policy", content: "<h4>Política de Devolução</h4><p>Pode devolver produtos selados num prazo de 30 dias. O reembolso é processado através do mesmo método de pagamento original no prazo de 7 dias úteis após a inspeção da devolução.</p>" }
         };
 
         function openModal(type) {
